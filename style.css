@@ -1,234 +1,192 @@
-<!-- LOCATION SECTION -->
-
-<section class="location-section">
-
-<div class="container">
-
-<div class="section-header">
-
-<span class="section-tag">
-Our Location
-</span>
-
-<h2>
-Visit Sahara Dental Care
-</h2>
-
-<p>
-
-Conveniently located near Sodani Hospital,
-Losal, Sikar.
-
-</p>
-
-</div>
-
-<div class="location-card">
-
-<div class="location-content">
-
-<h3>
-Sahara Dental Care
-</h3>
-
-<p>
-
-📍 Near Sodani Hospital,
-Losal, Sikar,
-Rajasthan - 332025
-
-</p>
-
-<p>
-
-📞 +91 7947132558
-
-</p>
-
-<p>
-
-🕒 Monday - Saturday
-
-<br>
-
-9:30 AM - 6:30 PM
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FINAL CTA -->
-
-<section class="final-cta">
-
-<div class="container">
-
-<div class="final-cta-box">
-
-<h2>
-
-Healthy Smiles Begin Here
-
-</h2>
-
-<p>
-
-Experience trusted dental care
-in a comfortable and welcoming environment.
-
-</p>
-
-<div class="cta-buttons">
-
-<a href="tel:+917947132558"
-class="primary-btn">
-
-Call Now
-
-</a>
-
-<a href="https://wa.me/917947132558"
-class="secondary-btn">
-
-WhatsApp Us
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FLOATING WHATSAPP BUTTON -->
-
-<a href="https://wa.me/917947132558"
-class="floating-whatsapp"
-target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<!-- FLOATING CALL BUTTON -->
-
-<a href="tel:+917947132558"
-class="floating-call">
-
-<i class="fas fa-phone"></i>
-
-</a>
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="container">
-
-<div class="footer-grid">
-
-<div class="footer-column">
-
-<h3>
-Sahara Dental Care
-</h3>
-
-<p>
-
-Trusted dental care in Losal, Sikar.
-
-Focused on patient comfort,
-quality care and a positive experience.
-
-</p>
-
-</div>
-
-<div class="footer-column">
-
-<h3>
-Quick Links
-</h3>
-
-<ul>
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#features">Why Us</a></li>
-
-<li><a href="#reviews">Reviews</a></li>
-
-<li><a href="#faq">FAQ</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div class="footer-column">
-
-<h3>
-Contact Info
-</h3>
-
-<p>
-
-📍 Near Sodani Hospital,
-Losal, Sikar
-
-</p>
-
-<p>
-
-📞 +91 7947132558
-
-</p>
-
-<p>
-
-🕒 Mon - Sat
-9:30 AM - 6:30 PM
-
-</p>
-
-</div>
-
-</div>
-
-<hr>
-
-<div class="footer-bottom">
-
-<p>
-
-© 2025 Sahara Dental Care.
-All Rights Reserved.
-
-</p>
-
-</div>
-
-</div>
-
-</footer>
-
-<!-- JAVASCRIPT -->
-
-<script src="script.js"></script>
-
-</body>
-</html>/* =========================
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
+
+:root{
+--primary:#0f4cff;
+--secondary:#00c2a8;
+--dark:#0b132b;
+--white:#ffffff;
+--light:#f8fbff;
+--text:#64748b;
+--shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+body{
+background:#f8fbff;
+color:#1e293b;
+overflow-x:hidden;
+line-height:1.7;
+}
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(15px);
+box-shadow:0 2px 20px rgba(0,0,0,.05);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:24px;
+font-weight:700;
+color:var(--primary);
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+color:#334155;
+font-weight:500;
+}
+
+.call-btn{
+background:var(--primary);
+color:white;
+padding:12px 24px;
+border-radius:50px;
+font-weight:600;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:linear-gradient(135deg,#0f4cff,#00c2a8);
+padding-top:120px;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 420px;
+gap:60px;
+align-items:center;
+}
+
+.hero-left{
+color:white;
+}
+
+.hero h1{
+font-size:68px;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+margin:30px 0;
+}
+
+.primary-btn{
+background:white;
+color:var(--primary);
+padding:15px 30px;
+border-radius:50px;
+font-weight:600;
+}
+
+.secondary-btn{
+border:2px solid white;
+color:white;
+padding:15px 30px;
+border-radius:50px;
+font-weight:600;
+}
+
+.hero-card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:var(--shadow);
+color:#000;
+}
+
+.section-header{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-tag{
+display:inline-block;
+background:#e0f2fe;
+color:var(--primary);
+padding:10px 18px;
+border-radius:30px;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.section-header h2{
+font-size:42px;
+margin-bottom:15px;
+} /* =========================
+TRUST BAR
+========================= */
+
+.trust-bar{
+background:white;
+padding:30px 0;
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.trust-item{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:15px;
+box-shadow:var(--shadow);
+}
+
+.trust-item i{
+font-size:28px;
+color:var(--primary);
+margin-bottom:10px;
+}
+
+/* =========================
 ABOUT SECTION
 ========================= */
 
@@ -286,7 +244,7 @@ transition:.3s;
 }
 
 .info-card:hover{
-transform:translateY(-5px);
+transform:translateY(-8px);
 }
 
 .icon-box{
@@ -312,7 +270,6 @@ font-size:24px;
 .info-card h4{
 font-size:22px;
 margin-bottom:10px;
-color:var(--dark);
 }
 
 .info-card p{
@@ -412,7 +369,6 @@ color:white;
 .why-card h3{
 font-size:22px;
 margin-bottom:15px;
-color:var(--dark);
 }
 
 .why-card p{
@@ -425,8 +381,7 @@ STATS SECTION
 
 .stats-section{
 padding:100px 0;
-background:
-linear-gradient(
+background:linear-gradient(
 135deg,
 var(--primary),
 var(--secondary)
@@ -441,7 +396,7 @@ gap:25px;
 
 .stat-card{
 background:rgba(255,255,255,.12);
-backdrop-filter:blur(20px);
+backdrop-filter:blur(15px);
 padding:35px;
 border-radius:25px;
 text-align:center;
@@ -453,17 +408,13 @@ font-size:48px;
 margin-bottom:10px;
 }
 
-.stat-card p{
-font-size:18px;
-}
-
 /* =========================
-PATIENT CARE SECTION
+PATIENT CARE
 ========================= */
 
 .care-section{
 padding:100px 0;
-background:#ffffff;
+background:white;
 }
 
 .care-wrapper{
@@ -476,7 +427,6 @@ align-items:center;
 .care-left h2{
 font-size:42px;
 margin:15px 0;
-color:var(--dark);
 }
 
 .care-left p{
@@ -492,8 +442,7 @@ gap:20px;
 .glass-box{
 padding:30px;
 border-radius:25px;
-background:
-rgba(255,255,255,.7);
+background:rgba(255,255,255,.8);
 backdrop-filter:blur(15px);
 box-shadow:var(--shadow);
 }
@@ -504,479 +453,304 @@ color:var(--primary);
 margin-bottom:15px;
 }
 
-.glass-box h3{
-margin-bottom:10px;
-color:var(--dark);
-}
-
 .glass-box p{
 color:var(--text);
+} /* =========================
+TRUST BAR
+========================= */
+
+.trust-bar{
+background:white;
+padding:30px 0;
+}
+
+.trust-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.trust-item{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:15px;
+box-shadow:var(--shadow);
+}
+
+.trust-item i{
+font-size:28px;
+color:var(--primary);
+margin-bottom:10px;
 }
 
 /* =========================
-RESPONSIVE
+ABOUT SECTION
 ========================= */
 
-@media(max-width:991px){
-
-.about-grid,
-.care-wrapper{
-grid-template-columns:1fr;
-}
-
-.why-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.stats-wrapper{
-grid-template-columns:repeat(2,1fr);
-}
-
-.overview-grid{
-grid-template-columns:1fr;
-}
-
-}
-
-@media(max-width:576px){
-
-.why-grid{
-grid-template-columns:1fr;
-}
-
-.stats-wrapper{
-grid-template-columns:1fr;
-}
-
-.about-features{
-grid-template-columns:1fr;
-}
-
-.section-header h2{
-font-size:32px;
-}
-
-.care-left h2{
-font-size:32px;
-}
-
-} /* =========================
-REVIEWS SECTION
-========================= */
-
-.reviews-section{
+.about-section{
 padding:100px 0;
-background:#f8fbff;
+background:#ffffff;
 }
 
-.review-summary{
+.about-grid{
 display:grid;
-grid-template-columns:300px 1fr;
-gap:30px;
-margin-bottom:50px;
+grid-template-columns:1.2fr 1fr;
+gap:50px;
 align-items:center;
 }
 
-.rating-box{
+.about-content h3{
+font-size:32px;
+margin-bottom:20px;
+color:var(--dark);
+}
+
+.about-content p{
+color:var(--text);
+margin-bottom:20px;
+}
+
+.about-features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:30px;
+}
+
+.feature-item{
+display:flex;
+align-items:center;
+gap:12px;
+background:#f8fbff;
+padding:15px;
+border-radius:12px;
+}
+
+.feature-item i{
+color:var(--secondary);
+font-size:20px;
+}
+
+.info-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:var(--shadow);
+margin-bottom:20px;
+transition:.3s;
+}
+
+.info-card:hover{
+transform:translateY(-8px);
+}
+
+.icon-box{
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
 background:linear-gradient(
 135deg,
 var(--primary),
 var(--secondary)
 );
-padding:40px;
-border-radius:25px;
-text-align:center;
+margin-bottom:15px;
+}
+
+.icon-box i{
 color:white;
+font-size:24px;
 }
 
-.rating-box h2{
-font-size:60px;
+.info-card h4{
+font-size:22px;
+margin-bottom:10px;
 }
 
-.rating-box span{
-display:block;
-margin-top:10px;
-opacity:.9;
+.info-card p{
+color:var(--text);
 }
 
-.rating-content{
-background:white;
-padding:35px;
-border-radius:25px;
-box-shadow:var(--shadow);
+/* =========================
+OVERVIEW SECTION
+========================= */
+
+.overview-section{
+padding:100px 0;
+background:#f8fbff;
 }
 
-.reviews-grid{
+.overview-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:25px;
 }
 
-.review-card{
+.overview-card{
 background:white;
-padding:30px;
+padding:35px;
+text-align:center;
 border-radius:25px;
 box-shadow:var(--shadow);
 transition:.3s;
 }
 
-.review-card:hover{
+.overview-card:hover{
 transform:translateY(-8px);
 }
 
-.review-top{
-margin-bottom:15px;
+.overview-card i{
+font-size:40px;
+color:var(--primary);
+margin-bottom:20px;
 }
 
-.review-card p{
+.overview-card h3{
+margin-bottom:15px;
+font-size:24px;
+}
+
+.overview-card p{
 color:var(--text);
 }
 
 /* =========================
-HIGHLIGHTS SECTION
+WHY CHOOSE US
 ========================= */
 
-.highlights-section{
+.why-section{
 padding:100px 0;
 background:white;
 }
 
-.highlight-grid{
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.why-card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:var(--shadow);
+transition:.3s;
+}
+
+.why-card:hover{
+transform:translateY(-10px);
+}
+
+.why-icon{
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:20px;
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+margin-bottom:20px;
+}
+
+.why-icon i{
+font-size:30px;
+color:white;
+}
+
+.why-card h3{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.why-card p{
+color:var(--text);
+}
+
+/* =========================
+STATS SECTION
+========================= */
+
+.stats-section{
+padding:100px 0;
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+}
+
+.stats-wrapper{
 display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:25px;
 }
 
-.highlight-card{
-background:#f8fbff;
-padding:30px;
-text-align:center;
-border-radius:20px;
-}
-
-.highlight-card i{
-font-size:34px;
-color:var(--primary);
-margin-bottom:15px;
-}
-
-.review-cta{
-padding:80px 0;
-background:linear-gradient(
-135deg,
-var(--primary),
-var(--secondary)
-);
-}
-
-.cta-box{
+.stat-card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+padding:35px;
+border-radius:25px;
 text-align:center;
 color:white;
 }
 
-.cta-box h2{
-font-size:42px;
-margin-bottom:15px;
+.stat-card h2{
+font-size:48px;
+margin-bottom:10px;
 }
 
 /* =========================
-FAQ SECTION
+PATIENT CARE
 ========================= */
 
-.faq-section{
-padding:100px 0;
-background:#f8fbff;
-}
-
-.faq-container{
-max-width:900px;
-margin:auto;
-}
-
-.faq-item{
-background:white;
-border-radius:20px;
-margin-bottom:15px;
-overflow:hidden;
-box-shadow:var(--shadow);
-}
-
-.faq-question{
-padding:22px;
-font-weight:600;
-cursor:pointer;
-font-size:18px;
-}
-
-.faq-answer{
-display:none;
-padding:0 22px 22px;
-color:var(--text);
-}
-
-/* =========================
-CONTACT SECTION
-========================= */
-
-.contact-section{
+.care-section{
 padding:100px 0;
 background:white;
 }
 
-.contact-wrapper{
+.care-wrapper{
 display:grid;
-grid-template-columns:1fr 400px;
-gap:40px;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
 }
 
-.contact-form-box{
-background:#f8fbff;
-padding:35px;
-border-radius:25px;
-box-shadow:var(--shadow);
+.care-left h2{
+font-size:42px;
+margin:15px 0;
 }
 
-.appointment-form input,
-.appointment-form textarea{
-width:100%;
-padding:16px;
-border:none;
-outline:none;
-background:white;
-border-radius:12px;
-margin-bottom:15px;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
+.care-left p{
+color:var(--text);
+margin-bottom:20px;
 }
 
-.contact-info{
+.care-right{
 display:grid;
 gap:20px;
 }
 
-.contact-card{
-background:white;
-padding:25px;
-border-radius:20px;
+.glass-box{
+padding:30px;
+border-radius:25px;
+background:rgba(255,255,255,.8);
+backdrop-filter:blur(15px);
 box-shadow:var(--shadow);
 }
 
-.contact-card i{
-font-size:28px;
+.glass-box i{
+font-size:32px;
 color:var(--primary);
 margin-bottom:15px;
 }
 
-.contact-card h3{
-margin-bottom:10px;
-}
-
-/* =========================
-QUICK CONTACT
-========================= */
-
-.quick-contact{
-padding:80px 0;
-background:#f8fbff;
-}
-
-.quick-contact-box{
-background:linear-gradient(
-135deg,
-var(--primary),
-var(--secondary)
-);
-padding:50px;
-border-radius:30px;
-text-align:center;
-color:white;
-}
-
-.quick-contact-box h2{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.quick-buttons{
-margin-top:25px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-/* =========================
-LOCATION SECTION
-========================= */
-
-.location-section{
-padding:100px 0;
-background:white;
-}
-
-.location-card{
-background:#f8fbff;
-padding:40px;
-border-radius:25px;
-text-align:center;
-box-shadow:var(--shadow);
-}
-
-.location-card h3{
-font-size:32px;
-margin-bottom:20px;
-color:var(--dark);
-}
-
-/* =========================
-FINAL CTA
-========================= */
-
-.final-cta{
-padding:90px 0;
-background:linear-gradient(
-135deg,
-var(--primary),
-var(--secondary)
-);
-}
-
-.final-cta-box{
-text-align:center;
-color:white;
-}
-
-.final-cta-box h2{
-font-size:48px;
-margin-bottom:15px;
-}
-
-.cta-buttons{
-margin-top:25px;
-display:flex;
-justify-content:center;
-gap:15px;
-flex-wrap:wrap;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-background:var(--dark);
-padding:80px 0 30px;
-color:white;
-}
-
-.footer-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:40px;
-margin-bottom:30px;
-}
-
-.footer-column h3{
-margin-bottom:20px;
-}
-
-.footer-column p,
-.footer-column li{
-color:#cbd5e1;
-margin-bottom:10px;
-}
-
-.footer-column a{
-color:#cbd5e1;
-}
-
-.footer-column a:hover{
-color:white;
-}
-
-.footer-bottom{
-text-align:center;
-padding-top:20px;
-}
-
-/* =========================
-FLOATING BUTTONS
-========================= */
-
-.floating-whatsapp{
-position:fixed;
-right:25px;
-bottom:25px;
-width:60px;
-height:60px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-color:white;
-z-index:999;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-.floating-call{
-position:fixed;
-right:25px;
-bottom:100px;
-width:60px;
-height:60px;
-border-radius:50%;
-background:var(--primary);
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:24px;
-color:white;
-z-index:999;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:991px){
-
-.review-summary,
-.contact-wrapper{
-grid-template-columns:1fr;
-}
-
-.reviews-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.highlight-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-}
-
-}
-
-@media(max-width:576px){
-
-.reviews-grid,
-.highlight-grid{
-grid-template-columns:1fr;
-}
-
-.quick-contact-box,
-.location-card{
-padding:30px 20px;
-}
-
-.final-cta-box h2,
-.quick-contact-box h2,
-.cta-box h2{
-font-size:32px;
-}
-
+.glass-box p{
+color:var(--text);
 }
